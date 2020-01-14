@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  web:
+    build:
+      context: ./.container/web
+    ports:
+      - 80:80
+      - 443:443
+    privileged: true
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html:cached
+      - ./.container/web/apache.conf:/etc/httpd/conf/httpd.conf
+      - cert:/etc/ssl/private
+    restart: always
+volumes:
+  cert:
+  node_modules:
