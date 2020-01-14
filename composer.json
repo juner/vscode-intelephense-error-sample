@@ -1,0 +1,15 @@
+{
+    "name": "juner/vscode-intelephense-error-sample",
+    "description": "vscode-intelephense-error-sample",
+    "type": "project",
+    "license": "Unlicense",
+    "authors": [
+        {
+            "name": "juner",
+            "email": "juner@juner.net"
+        }
+    ],
+    "require": {
+        "jonjomckay/php-pecl-uuid-stubs": "^1.0"
+    }
+}

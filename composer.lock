@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e090035ee8c073676041f53265d4c24b",
+    "packages": [
+        {
+            "name": "jonjomckay/php-pecl-uuid-stubs",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jonjo-blur/php-pecl-uuid-stubs.git",
+                "reference": "08922327fa66c07d40c18d735c6090525a10a3dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonjo-blur/php-pecl-uuid-stubs/zipball/08922327fa66c07d40c18d735c6090525a10a3dd",
+                "reference": "08922327fa66c07d40c18d735c6090525a10a3dd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src"
+                },
+                "files": [
+                    "src/UUID.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Stubs for the PHP PECL UUID extension",
+            "keywords": [
+                "pecl",
+                "stubs",
+                "uuid"
+            ],
+            "time": "2014-01-03T10:56:37+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

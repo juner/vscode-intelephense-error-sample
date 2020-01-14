@@ -1,5 +1,14 @@
 version: "3.7"
 services:
+  composer:
+    # 初回起動時の composer の実施用
+    # https://hub.docker.com/r/prooph/composer
+    # https://github.com/prooph/docker-files
+    image: prooph/composer:7.4
+    command: update
+    volumes:
+      - ./:/app
+    restart: "no"
   web:
     build:
       context: ./.container/web
@@ -13,6 +22,7 @@ services:
       - ./.container/web/apache.conf:/etc/httpd/conf/httpd.conf
       - cert:/etc/ssl/private
     restart: always
+    depends_on:
+      - "composer"
 volumes:
   cert:
-  node_modules:
