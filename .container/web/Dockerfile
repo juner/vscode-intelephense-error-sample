@@ -59,6 +59,7 @@ RUN yum install -y --enablerepo=ius git2u
 # composerのインストール
 RUN curl -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer
+RUN composer global require jonjomckay/php-pecl-uuid-stubs
 WORKDIR /var/www/html
 
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
